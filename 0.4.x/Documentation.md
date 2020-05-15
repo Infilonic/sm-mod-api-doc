@@ -8,7 +8,7 @@ Check the [Official API Documentation](https://www.scrapmechanic.com/api/index.h
 
 All these functions can only be used with the respective userdata.  
 The userdata itself uses the `__index` metamethod to look up its functions. If you want to use any of the function below, remember that you first need an instance of the particular userdata you're looking for and access it with the help of that reference.  
-All the functions require the first argument to be the instance of the specific userdata itself, either implicitly by using `obj:method()` or explicitly with `obj.method(obj)`.
+All the functions require the first parameter to receive the instance of the specific userdata as an argument, either implicitly by using `obj:method()` or explicitly with `obj.method(obj)`.
 
 ## Conventions used in this document
 
@@ -16,17 +16,17 @@ This documentation uses the following convention to display descriptions and typ
 
 > ## Example userdata
 > 
-> > exampleFunction(arg1, arg2)
+> > exampleFunction(param1, param2)
 >
-> `(retTypeA, retTypeB) - (argTypeA, argTypeB)`  
+> `(retTypeA, retTypeB) - (paramTypeA, paramTypeB)`  
 > Description
 >
 > - Returns
 >   - `ret1`: Description
 >   - `ret2`: Description
-> - Arguments
->   - `arg1`: Description
->   - `arg2`: Description
+> - Parameters
+>   - `param1`: Description
+>   - `param2`: Description
 
 ## Color
 
@@ -45,7 +45,7 @@ Sets whether the paint of the body can be changed.
 
 - Returns
     - `nil`
-- Arguments
+- Parameters
     - `self`: The body instance
     - `paintable`: Specifies whether the body is paintable
 
@@ -56,7 +56,7 @@ Checks whether the body is dynamic.
 
 - Returns
     - `bool`: Specifies the asked state
-- Arguments
+- Parameters
     - `self`: The body instance
 
 > ### isErasable(self)
@@ -66,7 +66,7 @@ Checks whether the body can be erased.
 
 - Returns
     - `bool`: Specifies the asked state
-- Arguments
+- Parameters
     - `self`: The body instance
 
 > ### isConvertibleToDynamic(self)
@@ -76,7 +76,7 @@ Checks whether the body can be converted to a dynamic body.
 
 - Returns
     - `bool`: Specifies the asked state
-- Arguments
+- Parameters
     - `self`: The body instance
 
 > ### createBlock(self, blockUuid, size, position, 0)
@@ -86,7 +86,7 @@ Creates a specified block with a given size and position.
 
 - Returns
     - `Shape`: The shape instance
-- Arguments
+- Parameters
     - `self`: The body instance
     - `blockUuid`: The UUID of the block to spawn
     - `size`: The size of the shape (minimum of 1, 1, 1)
@@ -99,7 +99,7 @@ Returns the ID of the creation the body is a part of.
 
 - Returns
     - `number`: The creations numeric ID
-- Arguments
+- Parameters
     - `self`: The body instance
 
 > ### createPart(self, partUuid, position)
@@ -109,7 +109,7 @@ Creates the specified part on a given position
 
 - Returns
     - `number`: The bodies ID, currently assigned by the game
-- Arguments
+- Parameters
     - `self`: The body instance
     - `partUuid`: The UUID of the part to spawn
     - `position`: The position to create the part at
