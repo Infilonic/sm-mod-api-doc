@@ -9,4 +9,4 @@ Since there already is an official documentation for the version 0.3.5, this rep
 
 # Contributing
 If you're interested in contributing to this repository, refer to the contribution guidelines.
-Remember that this repository only contains information avout *undocumented* facilities of the game.
+Remember that this repository only contains information about *undocumented* facilities of the game.
