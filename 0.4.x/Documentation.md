@@ -8,7 +8,7 @@ Check the [Official API Documentation](https://www.scrapmechanic.com/api/index.h
 
 All these functions can only be used with the respective userdata.  
 The userdata itself uses the `__index` metamethod to look up its functions. If you want to use any of the function below, remember that you first need an instance of the particular userdata you're looking for and access it with the help of that reference.  
-All the functions require the first parameter to receive the instance of the specific userdata as an argument, either implicitly by using `obj:method()` or explicitly with `obj.method(obj)`.
+Almost all the functions require the first parameter to receive the instance of the specific userdata as an argument, either implicitly by using `obj:method()` or explicitly with `obj.method(obj)`.
 
 ## Conventions used in this document
 
