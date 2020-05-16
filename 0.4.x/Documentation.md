@@ -87,7 +87,7 @@ Checks whether the body can be converted to a dynamic body.
 - Parameters
     - `self`: The body instance
 
-> ### createBlock(self, blockUuid, size, position, 0)
+> ### createBlock(self, blockUuid, size, position)
 
 `(Shape) - (Body, Uuid, Vec3, Vec3)`  
 Creates a specified block with a given size and position.
