@@ -36,6 +36,14 @@ This documentation uses the following convention to display descriptions and typ
 
 *Refer to the official documentation https://www.scrapmechanic.com/api/utils.html#sm.uuid*
 
+## Vec3
+
+*Refer to the official documentation https://scrapmechanic.com/api/utils.html#sm.vec3*
+
+## Storage
+
+*Refer to the official documentation https://scrapmechanic.com/api/managers.html#sm.storage*
+
 ## Body
 
 > ### setPaintable(self, paintable)
@@ -692,12 +700,6 @@ Creates the specified part on a given position
 
 > transformPoint
 
-## Storage
-
-> load
-
-> save
-
 ## Unit
 
 > setMovementType
@@ -725,26 +727,6 @@ Creates the specified part on a given position
 > getCurrentMovementDirection
 
 > sendCharacterEvent
-
-## Vec3
-
-> rotateY
-
-> rotateZ
-
-> length
-
-> rotateX
-
-> dot
-
-> length2
-
-> rotate
-
-> cross
-
-> normalize
 
 ## World
 
